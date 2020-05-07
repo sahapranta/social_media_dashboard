@@ -1,0 +1,30 @@
+.s2-card {
+  height: 154px;
+
+  &.card-def {
+    align-items: inherit;
+  }
+}
+
+.s2-top-bot-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.s2-card-bot {
+  .card-count-text {
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.s2-card-analytics {
+  display: flex;
+  align-items: center;
+}

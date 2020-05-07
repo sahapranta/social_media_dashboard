@@ -1,0 +1,88 @@
+// @use "sass:map";
+@import 'util.scss';
+@import 'normalize.scss';
+@import 'main.scss';
+@import 'header.scss';
+@import 'section-default.scss';
+
+.green-text-analytics {
+  color: map-get($primary-colors, lime-green);
+}
+
+.red-text-analytics {
+  color: map-get($primary-colors, bright-red);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: color $theme-transition;
+}
+
+.icon-facebook {
+  background-image: url('../images/icon-facebook.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.icon-twitter {
+  background-image: url('../images/icon-twitter.svg');
+  width: 20px;
+  height: 17px;
+}
+
+.icon-instagram {
+  background-image: url('../images/icon-instagram.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.icon-youtube {
+  background-image: url('../images/icon-youtube.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.icon-arrow {
+  display: inline-block;
+  width: 8px;
+  height: 4px;
+  margin-right: 8px;
+}
+
+.icon-up {
+  background-image: url('../images/icon-up.svg');
+}
+
+.icon-down {
+  background-image: url('../images/icon-down.svg');
+}
+
+.icon-svg {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1920px) {
+  .icon-facebook,
+  .icon-twitter,
+  .icon-instagram,
+  .icon-youtube,
+  .icon-up,
+  .icon-down {
+    transform: scale(1.1);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  transition: color $theme-transition;
+
+  @media only screen and (min-width: 1200px) {
+    padding-top: 1%;
+  }
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

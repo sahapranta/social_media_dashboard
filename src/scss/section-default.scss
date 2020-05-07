@@ -1,0 +1,39 @@
+@import 'section-one.scss';
+@import 'section-two.scss';
+
+.card-def {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: map-get($dark-theme, card-background);
+  color: map-get($dark-theme, sub-text);
+  transition: background $theme-transition, color $theme-transition,
+    transform $theme-transition;
+
+  .card-count-text {
+    transition: color $theme-transition;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background: map-get($dark-theme, hover);
+  }
+}
+
+.section-container {
+  @media only screen and (min-width: 568px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  margin: 20px 0;
+}

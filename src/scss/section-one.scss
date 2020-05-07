@@ -1,0 +1,86 @@
+.top-wrapper {
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 25px;
+  }
+}
+
+.s1-card {
+  position: relative;
+  height: 224px;
+  // important for border-radius to work
+  // hides corners of &::after block
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+  }
+
+  &.s1-card-facebook {
+    &::after {
+      background: map-get($primary-colors, facebook);
+    }
+  }
+
+  &.s1-card-twitter {
+    &::after {
+      background: map-get($primary-colors, twitter);
+    }
+  }
+
+  &.s1-card-instagram {
+    &::after {
+      background: map-get($primary-colors, instagram);
+    }
+  }
+
+  &.s1-card-youtube {
+    &::after {
+      background: map-get($primary-colors, youtube);
+    }
+  }
+}
+
+.s1-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .username {
+    margin-left: 10px;
+  }
+}
+
+.s1-card-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card-count-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    @media only screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .s1-card-follow-text {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+
+    @media only screen and (min-width: 768px) {
+      letter-spacing: 4.5px;
+    }
+  }
+}
+
+.s1-card-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

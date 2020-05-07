@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "username": "@nathanf",
+      "type": "followers",
+      "data": "1987",
+      "stat": "12",
+      "source": "facebook"
+    },
+    {
+      "username": "@nathanf",
+      "type": "followers",
+      "data": "1044",
+      "stat": "99",
+      "source": "twitter"
+    },
+    {
+      "username": "@realnathanf",
+      "type": "followers",
+      "data": "11k",
+      "stat": "1099",
+      "source": "instagram"
+    },
+    {
+      "username": "Nathan F.",
+      "type": "subscribers",
+      "data": "8239",
+      "stat": "144",
+      "source": "youtube"
+    }
+  ],
+  "info": [
+    { "source": "facebook", "type": "Page Views", "count": 87, "stat": "3" },
+    { "source": "facebook", "type": "Likes", "count": 52, "stat": "2" },
+    { "source": "instagram", "type": "Page Views", "count": "52k", "stat": "1357" },
+    { "source": "instagram", "type": "Likes", "count": "5426", "stat": "2257" },
+    { "source": "twiter", "type": "Retweets", "count": "117", "stat": "303" },
+    { "source": "twiter", "type": "Likes", "count": "507", "stat": "553" },
+    { "source": "youtube", "type": "Likes", "count": "1407", "stat": "12" },
+    { "source": "youtube", "type": "Total Views", "count": "107", "stat": "19" }
+  ]
+}

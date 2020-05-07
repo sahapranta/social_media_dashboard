@@ -1,0 +1,29 @@
+@import 'toggle-theme.scss';
+
+header {
+  @include flex-column;
+  transition: color $theme-transition;
+
+  @media only screen and (min-width: 568px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: map-get($dark-theme, sub-text);
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.title-wrapper {
+  padding-bottom: 20px;
+}
+
+.title-subhead {
+  font-weight: 500;
+}
