@@ -9,7 +9,7 @@ export default function(props) {
         <span className={"icon-" + source + " icon-svg"}></span>
       </div>
       <div className="s2-card-bot s2-top-bot-default">
-        <span className="card-count-text" id={source + "-views-count"}>
+        <span className="card-count-text">
           {count}
         </span>
         <div className="s2-card-analytics">
@@ -23,7 +23,7 @@ export default function(props) {
               (source === "youtube" ? "red" : "green") + "-text-analytics"
             }
           >
-            <span id={`${source}-views-analytics`}>{stat}%</span>
+            <span>{stat}%</span>
           </span>
         </div>
       </div>

@@ -6,12 +6,12 @@ export default function(props) {
     <div className={`s1-card s1-card-${source} card-def`}>
       <div className="s1-card-top">
         <span className={`icon-${source} icon-svg`}></span>
-        <span className="username" id={`${source}-username`}>
+        <span className="username">
           {username}
         </span>
       </div>
       <div className="s1-card-mid">
-        <div className="card-count-text" id={`${source}-supporter-count`}>
+        <div className="card-count-text">
           {data}
         </div>
         <p className="s1-card-follow-text">{type}</p>
@@ -25,7 +25,7 @@ export default function(props) {
         <span
           className={(source === "youtube" ? "red" : "green") + "-text-analytics"}
         >
-          <span id={`${source}-analytics`}>{stat} Today</span>
+          <span>{stat} Today</span>
         </span>
       </div>
     </div>
